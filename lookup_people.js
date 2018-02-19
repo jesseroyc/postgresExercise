@@ -24,7 +24,9 @@ client.connect((err) => {
 
     console.log(`Found 1 person(s) by the name "${args[2]}":\n 
         ${result.rows[0].first_name} ${result.rows[0].last_name}, born "${result.rows[0].birthdate}"`);
-    
+
     client.end();
   });
 });
+
+console.log("Insering...");
